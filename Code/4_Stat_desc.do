@@ -1,11 +1,9 @@
 *** DESCRIPTIVE STATISTICS
 
-*********************************************************
-* This is the stata script designed to do
-* descriptive statistics
-*********************************************************
-
 set more off 
+
+/*
+***** New Graphs to be included in the report
 
 ****************************
 ***   Preliminary Graph  ***
@@ -209,7 +207,7 @@ foreach v of varlist div_ref - div_long_ref{
 	graph export ${stat_desc}/Years_comparison/Lock_comparison_GT_`v'.pdf , replace as(pdf)
 }
 
-
+*/
 *******************************
 ***   Divorce time series   ***
 *******************************
@@ -335,7 +333,7 @@ graph export ${stat_desc}/Graphs/Pandemic_threshold_confirmed_pop.pdf , replace 
 
 
 
-
+/*
 *** Descriptive Statistics on Indexes
 
 use  ${raw_data}/data_agg.dta, clear
@@ -418,7 +416,7 @@ graph export ${stat_desc}/Indexes/4_StatDesc_NV_`v'.pdf , replace as(pdf)
 } 
 
 
-
+*/
 
 exit
 
