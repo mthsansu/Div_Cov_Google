@@ -1,0 +1,519 @@
+%  4 Dec 2020 21:16:16
+\documentclass{article}
+\usepackage{longtable}
+\begin{document}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = div\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &    3.723\sym{**} &    5.284\sym{*}  &    3.728\sym{**} &    4.672\sym{**} &    3.746\sym{**} &    3.695\sym{*}  &    2.854\sym{*}  \\
+                &  (1.184)         &  (2.043)         &  (1.191)         &  (1.142)         &  (1.094)         &  (1.302)         &  (1.095)         \\
+-1              &    4.934\sym{***}&    2.875         &    4.939\sym{***}&    6.785\sym{***}&    4.706\sym{**} &    4.921\sym{***}&    4.024\sym{*}  \\
+                &  (1.018)         &  (2.724)         &  (1.019)         &  (1.111)         &  (1.150)         &  (1.162)         &  (1.394)         \\
+0               &    5.623\sym{***}&    2.734         &    5.628\sym{***}&    8.376\sym{***}&    4.284\sym{***}&    5.600\sym{***}&    4.825\sym{***}\\
+                &  (1.003)         &  (1.636)         &  (1.008)         &  (0.811)         &  (0.886)         &  (1.063)         &  (0.750)         \\
+1               &    7.136\sym{***}&    5.053\sym{*}  &    7.141\sym{***}&    10.79\sym{***}&    5.982\sym{**} &    7.103\sym{***}&    6.607\sym{***}\\
+                &  (1.658)         &  (2.050)         &  (1.665)         &  (1.583)         &  (1.657)         &  (1.640)         &  (1.511)         \\
+2               &    12.87\sym{***}&    8.014\sym{**} &    12.88\sym{***}&    17.41\sym{***}&    11.86\sym{***}&    12.84\sym{***}&    11.63\sym{***}\\
+                &  (1.413)         &  (2.646)         &  (1.417)         &  (1.341)         &  (1.380)         &  (1.668)         &  (1.473)         \\
+Cases (pop.)    &                  &                  &                  &                  &    0.369\sym{*}  &                  &                  \\
+                &                  &                  &                  &                  &  (0.156)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &    0.770         &                  \\
+                &                  &                  &                  &                  &                  &  (14.29)         &                  \\
+Constant        &    96.50\sym{***}&    105.0\sym{***}&    97.33\sym{***}&    150.3\sym{***}&    96.52\sym{***}&    96.50\sym{***}&    103.9\sym{***}\\
+                &  (6.844)         &  (2.025)         &  (2.798)         &  (6.708)         &  (6.855)         &  (6.848)         &  (2.108)         \\
+\hline
+\(R^{2}\)       &    0.475         &    0.429         &    0.545         &    0.614         &    0.476         &    0.475         &    0.331         \\
+Observations    &     2130         &     2130         &     2130         &     2130         &     2130         &     2130         &     3030         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = div\_cov\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &   -831.2\sym{*}  &  -1457.3\sym{*}  &   -831.2\sym{*}  &   -824.4\sym{*}  &   -833.6\sym{*}  &  -1090.2\sym{*}  &   -834.0\sym{*}  \\
+                &  (334.9)         &  (486.9)         &  (336.0)         &  (340.0)         &  (362.4)         &  (380.4)         &  (335.0)         \\
+-1              &  -1603.6\sym{***}&  -2230.6\sym{***}&  -1603.6\sym{***}&  -1590.4\sym{***}&  -1538.2\sym{***}&  -1726.6\sym{***}&  -1603.3\sym{***}\\
+                &  (281.2)         &  (460.3)         &  (282.2)         &  (282.0)         &  (272.3)         &  (279.1)         &  (280.8)         \\
+0               &   -679.6         &  -1071.0         &   -679.6         &   -660.0         &   -319.5         &   -901.5         &   -681.0         \\
+                &  (418.7)         &  (757.4)         &  (420.1)         &  (417.3)         &  (438.8)         &  (439.7)         &  (417.8)         \\
+1               &  -1542.4\sym{**} &  -1508.9\sym{*}  &  -1542.4\sym{**} &  -1516.3\sym{**} &  -1239.9\sym{**} &  -1845.9\sym{**} &  -1542.3\sym{**} \\
+                &  (438.3)         &  (675.7)         &  (439.8)         &  (432.3)         &  (386.7)         &  (554.6)         &  (437.5)         \\
+2               &  -2328.5\sym{***}&  -2638.9\sym{***}&  -2328.5\sym{***}&  -2296.1\sym{***}&  -2085.2\sym{***}&  -2594.4\sym{***}&  -2331.3\sym{***}\\
+                &  (223.6)         &  (300.6)         &  (224.4)         &  (217.7)         &  (231.7)         &  (243.1)         &  (223.2)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -97.51\sym{*}  &                  &                  \\
+                &                  &                  &                  &                  &  (32.55)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   6987.8\sym{**} &                  \\
+                &                  &                  &                  &                  &                  & (2178.5)         &                  \\
+Constant        &    312.9\sym{***}&    381.8\sym{***}&    312.6\sym{***}&    481.6\sym{***}&    320.6\sym{***}&    295.1\sym{***}&    220.8\sym{***}\\
+                &  (20.45)         &  (47.61)         &  (20.68)         &  (98.44)         &  (21.13)         &  (22.96)         &  (14.39)         \\
+\hline
+\(R^{2}\)       &    0.524         &    0.439         &    0.524         &    0.524         &    0.530         &    0.530         &    0.520         \\
+Observations    &     1704         &     1704         &     1704         &     1704         &     1704         &     1704         &     2424         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = div\_file\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &    4.694         &    14.46         &    4.707         &    5.263         &    4.697         &    3.336         &    4.289         \\
+                &  (3.112)         &  (8.867)         &  (3.131)         &  (3.593)         &  (3.138)         &  (3.098)         &  (3.463)         \\
+-1              &    32.37\sym{**} &    10.60         &    32.38\sym{**} &    33.42\sym{**} &    32.28\sym{**} &    31.72\sym{**} &    24.19         \\
+                &  (10.35)         &  (10.31)         &  (10.39)         &  (9.344)         &  (10.14)         &  (9.947)         &  (13.37)         \\
+0               &   -3.713         &   -7.794         &   -3.700         &   -2.170         &   -4.183         &   -4.876         &    0.717         \\
+                &  (8.367)         &  (7.901)         &  (8.399)         &  (7.856)         &  (8.098)         &  (7.943)         &  (5.675)         \\
+1               &    11.93\sym{*}  &    6.259         &    11.95\sym{*}  &    13.96\sym{**} &    11.54\sym{*}  &    10.34\sym{*}  &    13.68\sym{*}  \\
+                &  (4.607)         &  (6.399)         &  (4.624)         &  (3.722)         &  (4.216)         &  (4.061)         &  (5.892)         \\
+2               &    22.92\sym{**} &    11.26         &    22.93\sym{**} &    25.43\sym{**} &    22.60\sym{**} &    21.53\sym{*}  &    28.62\sym{**} \\
+                &  (5.558)         &  (8.081)         &  (5.575)         &  (6.436)         &  (7.018)         &  (7.090)         &  (7.966)         \\
+Cases (pop.)    &                  &                  &                  &                  &    0.127         &                  &                  \\
+                &                  &                  &                  &                  &  (0.763)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &    36.65         &                  \\
+                &                  &                  &                  &                  &                  &  (45.35)         &                  \\
+Constant        &    80.29\sym{***}&    93.34\sym{***}&    98.48\sym{***}&    103.3\sym{***}&    80.28\sym{***}&    80.20\sym{***}&    81.56\sym{***}\\
+                &  (13.75)         &  (8.458)         &  (5.738)         &  (21.20)         &  (13.79)         &  (13.80)         &  (16.05)         \\
+\hline
+\(R^{2}\)       &    0.108         &    0.062         &    0.196         &    0.227         &    0.108         &    0.108         &    0.047         \\
+Observations    &     1704         &     1704         &     1704         &     1704         &     1704         &     1704         &     2424         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = div\_papers\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &   -27.69\sym{***}&   -24.38\sym{**} &   -27.66\sym{***}&   -27.74\sym{***}&   -27.78\sym{***}&   -21.53\sym{***}&   -19.14\sym{**} \\
+                &  (3.557)         &  (6.643)         &  (3.575)         &  (3.671)         &  (3.149)         &  (3.682)         &  (4.766)         \\
+-1              &   -1.791         &   -13.31         &   -1.756         &   -1.891         &   -0.859         &    1.077         &   -3.787         \\
+                &  (5.128)         &  (9.886)         &  (5.146)         &  (5.624)         &  (5.773)         &  (5.431)         &  (6.544)         \\
+0               &   -12.66         &   -3.540         &   -12.63         &   -12.81         &   -7.237         &   -7.420         &   -8.392         \\
+                &  (9.231)         &  (8.357)         &  (9.267)         &  (9.095)         &  (8.077)         &  (7.659)         &  (10.63)         \\
+1               &   -5.314         &   -4.680         &   -5.279         &   -5.509         &   -0.726         &    1.907         &   -1.128         \\
+                &  (8.181)         &  (9.656)         &  (8.208)         &  (9.507)         &  (7.977)         &  (7.739)         &  (8.017)         \\
+2               &    9.270         &    16.37         &    9.305         &    9.027         &    13.03         &    15.70         &    5.751         \\
+                &  (6.654)         &  (10.65)         &  (6.681)         &  (6.642)         &  (7.099)         &  (7.569)         &  (9.191)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -1.488\sym{**} &                  &                  \\
+                &                  &                  &                  &                  &  (0.404)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -168.4\sym{**} &                  \\
+                &                  &                  &                  &                  &                  &  (48.71)         &                  \\
+Constant        &    105.0\sym{***}&    137.0\sym{***}&    124.8\sym{***}&    123.5\sym{***}&    105.1\sym{***}&    105.4\sym{***}&    92.64\sym{***}\\
+                &  (16.87)         &  (11.88)         &  (7.194)         &  (19.49)         &  (16.84)         &  (16.92)         &  (12.36)         \\
+\hline
+\(R^{2}\)       &    0.133         &    0.144         &    0.257         &    0.305         &    0.134         &    0.134         &    0.027         \\
+Observations    &     1846         &     1846         &     1846         &     1846         &     1846         &     1846         &     2626         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = div\_legal\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &    2.026         &   -0.283         &    2.048         &    1.873         &    2.036         &    1.056         &   -0.490         \\
+                &  (2.998)         &  (4.664)         &  (3.008)         &  (3.166)         &  (3.021)         &  (3.161)         &  (2.812)         \\
+-1              &    4.875         &   -1.507         &    4.897         &    4.604         &    4.779         &    4.416         &    3.085         \\
+                &  (2.730)         &  (5.323)         &  (2.737)         &  (2.711)         &  (2.692)         &  (2.654)         &  (3.017)         \\
+0               &    3.287         &   -3.085         &    3.309         &    2.900         &    2.727         &    2.456         &    4.408         \\
+                &  (2.259)         &  (5.305)         &  (2.259)         &  (2.171)         &  (2.773)         &  (2.521)         &  (2.384)         \\
+1               &    8.581\sym{*}  &    7.040         &    8.604\sym{*}  &    8.077\sym{**} &    8.099         &    7.431         &    5.151         \\
+                &  (3.392)         &  (4.993)         &  (3.399)         &  (2.657)         &  (3.965)         &  (4.101)         &  (4.365)         \\
+2               &    11.75\sym{***}&    8.315         &    11.77\sym{***}&    11.13\sym{***}&    11.32\sym{**} &    10.67\sym{**} &    9.068\sym{**} \\
+                &  (2.395)         &  (4.766)         &  (2.400)         &  (2.361)         &  (2.744)         &  (3.104)         &  (2.877)         \\
+Cases (pop.)    &                  &                  &                  &                  &    0.154         &                  &                  \\
+                &                  &                  &                  &                  &  (0.368)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &    26.95         &                  \\
+                &                  &                  &                  &                  &                  &  (34.17)         &                  \\
+Constant        &    81.65\sym{***}&    94.11\sym{***}&    112.6\sym{***}&    142.4\sym{***}&    81.66\sym{***}&    81.64\sym{***}&    131.8\sym{***}\\
+                &  (4.736)         &  (4.343)         &  (1.742)         &  (10.72)         &  (4.739)         &  (4.734)         &  (7.023)         \\
+\hline
+\(R^{2}\)       &    0.143         &    0.148         &    0.194         &    0.225         &    0.143         &    0.143         &    0.145         \\
+Observations    &     2130         &     2130         &     2130         &     2130         &     2130         &     2130         &     3030         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = div\_lawyer\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &   -4.150         &   -4.859         &   -4.122         &   -4.147         &   -4.134         &   -4.396         &   -5.166         \\
+                &  (4.739)         &  (7.253)         &  (4.752)         &  (4.637)         &  (4.700)         &  (4.133)         &  (6.354)         \\
+-1              &    8.590\sym{*}  &    3.493         &    8.618\sym{*}  &    8.572\sym{*}  &    8.379\sym{*}  &    8.474\sym{*}  &    5.358         \\
+                &  (3.117)         &  (5.495)         &  (3.120)         &  (3.403)         &  (3.068)         &  (3.489)         &  (7.639)         \\
+0               &    8.775         &    0.551         &    8.803         &    8.736         &    7.556         &    8.565         &    3.241         \\
+                &  (8.089)         &  (6.456)         &  (8.111)         &  (8.610)         &  (7.804)         &  (8.851)         &  (6.996)         \\
+1               &    12.66\sym{**} &    12.96         &    12.69\sym{**} &    12.60\sym{*}  &    11.61\sym{*}  &    12.37\sym{*}  &    11.17\sym{*}  \\
+                &  (4.079)         &  (9.738)         &  (4.094)         &  (4.816)         &  (5.004)         &  (5.176)         &  (4.702)         \\
+2               &    11.69\sym{**} &    11.07         &    11.72\sym{**} &    11.61\sym{*}  &    10.77\sym{*}  &    11.42\sym{*}  &    9.122\sym{**} \\
+                &  (3.723)         &  (6.574)         &  (3.734)         &  (4.267)         &  (3.820)         &  (4.131)         &  (3.026)         \\
+Cases (pop.)    &                  &                  &                  &                  &    0.334         &                  &                  \\
+                &                  &                  &                  &                  &  (0.601)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &    6.771         &                  \\
+                &                  &                  &                  &                  &                  &  (43.90)         &                  \\
+Constant        &    87.34\sym{***}&    94.81\sym{***}&    92.98\sym{***}&    88.27\sym{***}&    87.32\sym{***}&    87.32\sym{***}&    104.9\sym{***}\\
+                &  (4.075)         &  (6.144)         &  (2.630)         &  (8.005)         &  (4.090)         &  (4.015)         &  (8.866)         \\
+\hline
+\(R^{2}\)       &    0.103         &    0.061         &    0.143         &    0.177         &    0.103         &    0.103         &    0.034         \\
+Observations    &     1988         &     1988         &     1988         &     1988         &     1988         &     1988         &     2828         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = div\_court\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &   -1.189         &   -4.724         &   -1.163         &   -1.307         &   -1.206         &   -1.152         &   -8.441         \\
+                &  (4.107)         &  (6.423)         &  (4.121)         &  (4.120)         &  (4.082)         &  (4.163)         &  (5.197)         \\
+-1              &    1.961         &   -0.867         &    1.987         &    1.732         &    2.127         &    1.978         &   -3.475         \\
+                &  (1.660)         &  (4.821)         &  (1.664)         &  (1.677)         &  (1.661)         &  (1.851)         &  (2.469)         \\
+0               &    8.191\sym{*}  &    5.924         &    8.218\sym{*}  &    7.851\sym{*}  &    9.169\sym{*}  &    8.223         &    6.093         \\
+                &  (3.516)         &  (8.005)         &  (3.525)         &  (3.172)         &  (4.046)         &  (3.852)         &  (2.902)         \\
+1               &    10.22\sym{*}  &    6.197         &    10.24\sym{*}  &    9.765         &    11.06\sym{*}  &    10.26         &    10.40\sym{*}  \\
+                &  (4.423)         &  (6.540)         &  (4.434)         &  (4.843)         &  (4.714)         &  (5.029)         &  (4.476)         \\
+2               &   -3.560         &   -6.477         &   -3.533         &   -4.121         &   -2.819         &   -3.519         &   -2.913         \\
+                &  (3.437)         &  (5.766)         &  (3.446)         &  (3.518)         &  (3.329)         &  (3.811)         &  (3.164)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -0.269         &                  &                  \\
+                &                  &                  &                  &                  &  (0.475)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -1.021         &                  \\
+                &                  &                  &                  &                  &                  &  (35.24)         &                  \\
+Constant        &    84.02\sym{***}&    101.3\sym{***}&    109.5\sym{***}&    281.8\sym{***}&    84.01\sym{***}&    84.02\sym{***}&    109.9\sym{***}\\
+                &  (7.592)         &  (5.324)         &  (2.826)         &  (6.054)         &  (7.588)         &  (7.593)         &  (12.53)         \\
+\hline
+\(R^{2}\)       &    0.142         &    0.120         &    0.214         &    0.242         &    0.143         &    0.142         &    0.033         \\
+Observations    &     2130         &     2130         &     2130         &     2130         &     2130         &     2130         &     3030         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = div\_law\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &   -4.452         &   -3.109         &   -4.436         &   -5.461         &   -4.447         &   -4.408         &   -1.932         \\
+                &  (3.027)         &  (2.718)         &  (3.036)         &  (3.238)         &  (3.043)         &  (3.532)         &  (2.022)         \\
+-1              &   -2.628         &   -4.634         &   -2.612         &   -4.557         &   -2.691         &   -2.607         &   -2.148         \\
+                &  (1.806)         &  (2.732)         &  (1.809)         &  (2.197)         &  (1.916)         &  (2.050)         &  (4.754)         \\
+0               &   -7.134\sym{*}  &   -13.06\sym{**} &   -7.118\sym{*}  &   -9.983\sym{**} &   -7.496\sym{*}  &   -7.096\sym{*}  &   -8.468\sym{***}\\
+                &  (3.148)         &  (3.925)         &  (3.158)         &  (2.413)         &  (3.038)         &  (2.987)         &  (1.930)         \\
+1               &    2.022         &    0.726         &    2.038         &   -1.746         &    1.710         &    2.074         &   -2.971         \\
+                &  (3.836)         &  (3.801)         &  (3.851)         &  (2.937)         &  (3.669)         &  (3.449)         &  (3.978)         \\
+2               &    2.832         &   -0.393         &    2.847         &   -1.838         &    2.558         &    2.880         &    2.570         \\
+                &  (3.040)         &  (4.132)         &  (3.049)         &  (3.389)         &  (2.821)         &  (3.060)         &  (4.059)         \\
+Cases (pop.)    &                  &                  &                  &                  &   0.0992         &                  &                  \\
+                &                  &                  &                  &                  &  (0.291)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -1.210         &                  \\
+                &                  &                  &                  &                  &                  &  (24.29)         &                  \\
+Constant        &    123.1\sym{***}&    139.7\sym{***}&    132.3\sym{***}&    107.2\sym{***}&    123.1\sym{***}&    123.1\sym{***}&    208.8\sym{***}\\
+                &  (9.521)         &  (4.660)         &  (4.149)         &  (13.78)         &  (9.534)         &  (9.563)         &  (18.95)         \\
+\hline
+\(R^{2}\)       &    0.580         &    0.521         &    0.627         &    0.653         &    0.580         &    0.580         &    0.442         \\
+Observations    &     1988         &     1988         &     1988         &     1988         &     1988         &     1988         &     2828         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = lock\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &   -284.3\sym{***}&   -311.8\sym{**} &   -284.3\sym{***}&   -277.9\sym{***}&   -288.0\sym{***}&   -192.3\sym{**} &   -283.9\sym{***}\\
+                &  (40.08)         &  (77.52)         &  (40.22)         &  (40.72)         &  (59.71)         &  (51.79)         &  (40.83)         \\
+-1              &   -771.4\sym{***}&   -681.2\sym{***}&   -771.3\sym{***}&   -759.1\sym{***}&   -733.8\sym{***}&   -727.9\sym{***}&   -776.6\sym{***}\\
+                &  (23.38)         &  (52.35)         &  (23.47)         &  (23.78)         &  (55.40)         &  (33.53)         &  (23.13)         \\
+0               &   -732.8\sym{***}&   -623.7\sym{***}&   -732.8\sym{***}&   -714.6\sym{***}&   -511.9\sym{**} &   -654.1\sym{***}&   -736.5\sym{***}\\
+                &  (48.78)         &  (116.1)         &  (48.95)         &  (49.69)         &  (131.6)         &  (88.28)         &  (47.66)         \\
+1               &   -982.7\sym{***}&   -745.6\sym{***}&   -982.6\sym{***}&   -958.6\sym{***}&   -792.4\sym{***}&   -873.7\sym{***}&   -987.6\sym{***}\\
+                &  (65.73)         &  (83.56)         &  (65.94)         &  (63.90)         &  (46.52)         &  (43.73)         &  (65.09)         \\
+2               &  -1030.7\sym{***}&   -827.4\sym{***}&  -1030.7\sym{***}&  -1000.8\sym{***}&   -863.5\sym{***}&   -929.2\sym{***}&  -1031.6\sym{***}\\
+                &  (75.06)         &  (63.18)         &  (75.32)         &  (72.96)         &  (86.66)         &  (56.78)         &  (75.59)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -60.78\sym{***}&                  &                  \\
+                &                  &                  &                  &                  &  (12.33)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &  -2553.1\sym{**} &                  \\
+                &                  &                  &                  &                  &                  &  (704.1)         &                  \\
+Constant        &    61.31\sym{***}&    70.27\sym{***}&    178.7\sym{***}&    9.979         &    57.68\sym{***}&    62.28\sym{***}&    70.60\sym{***}\\
+                &  (3.991)         &  (6.115)         &  (10.37)         &  (34.13)         &  (2.755)         &  (4.171)         &  (7.401)         \\
+\hline
+\(R^{2}\)       &    0.423         &    0.400         &    0.426         &    0.429         &    0.435         &    0.427         &    0.413         \\
+Observations    &     2130         &     2130         &     2130         &     2130         &     2130         &     2130         &     3030         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = div\_cov\_media\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &    2.431         &    3.139         &    2.435         &    3.178\sym{*}  &    2.465\sym{*}  &    1.974         &    0.926         \\
+                &  (1.145)         &  (3.043)         &  (1.151)         &  (1.143)         &  (1.050)         &  (1.204)         &  (1.389)         \\
+-1              &    5.853\sym{*}  &    6.750         &    5.857\sym{*}  &    7.309\sym{*}  &    5.507\sym{*}  &    5.637\sym{*}  &    5.814\sym{*}  \\
+                &  (2.532)         &  (3.423)         &  (2.543)         &  (2.538)         &  (2.209)         &  (2.420)         &  (2.317)         \\
+0               &    9.663\sym{***}&    4.574         &    9.667\sym{***}&    11.83\sym{***}&    7.631\sym{**} &    9.272\sym{***}&    9.377\sym{***}\\
+                &  (1.366)         &  (3.056)         &  (1.371)         &  (1.222)         &  (1.892)         &  (1.402)         &  (1.658)         \\
+1               &    8.193\sym{***}&    3.570         &    8.197\sym{***}&    11.07\sym{***}&    6.442\sym{**} &    7.651\sym{***}&    7.119\sym{**} \\
+                &  (1.850)         &  (4.360)         &  (1.857)         &  (1.781)         &  (1.772)         &  (1.709)         &  (1.740)         \\
+2               &    14.86\sym{***}&    10.92\sym{***}&    14.87\sym{***}&    18.43\sym{***}&    13.32\sym{***}&    14.36\sym{***}&    12.82\sym{***}\\
+                &  (1.744)         &  (2.104)         &  (1.752)         &  (1.853)         &  (1.888)         &  (1.582)         &  (2.475)         \\
+Cases (pop.)    &                  &                  &                  &                  &    0.559         &                  &                  \\
+                &                  &                  &                  &                  &  (0.321)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &    12.68         &                  \\
+                &                  &                  &                  &                  &                  &  (12.87)         &                  \\
+Constant        &    95.13\sym{***}&    101.6\sym{***}&    99.14\sym{***}&    155.7\sym{***}&    95.16\sym{***}&    95.13\sym{***}&    105.0\sym{***}\\
+                &  (6.236)         &  (2.286)         &  (2.425)         &  (4.931)         &  (6.258)         &  (6.235)         &  (3.228)         \\
+\hline
+\(R^{2}\)       &    0.460         &    0.346         &    0.518         &    0.568         &    0.461         &    0.460         &    0.298         \\
+Observations    &     2130         &     2130         &     2130         &     2130         &     2130         &     2130         &     3030         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = alimony\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &   -3.987         &    17.86         &   -3.966         &   -3.443         &   -3.958         &   -2.289         &   -11.54         \\
+                &  (7.993)         &  (14.36)         &  (8.024)         &  (7.943)         &  (7.995)         &  (7.223)         &  (11.12)         \\
+-1              &    5.902         &   -10.31         &    5.923         &    6.963         &    5.603         &    6.704         &    10.82\sym{*}  \\
+                &  (7.225)         &  (13.97)         &  (7.248)         &  (6.991)         &  (7.146)         &  (7.883)         &  (4.893)         \\
+0               &    1.594         &    1.422         &    1.615         &    3.172         &   -0.160         &    3.049         &    6.683         \\
+                &  (3.640)         &  (7.124)         &  (3.656)         &  (3.876)         &  (4.129)         &  (4.434)         &  (5.082)         \\
+1               &   -4.592         &    1.423         &   -4.571         &   -2.497         &   -6.104         &   -2.580         &   -2.967         \\
+                &  (6.877)         &  (7.938)         &  (6.902)         &  (7.072)         &  (6.849)         &  (7.140)         &  (7.079)         \\
+2               &    9.158         &    6.886         &    9.179         &    11.76         &    7.830         &    11.03         &    11.64         \\
+                &  (7.203)         &  (22.31)         &  (7.232)         &  (6.675)         &  (7.807)         &  (8.641)         &  (6.880)         \\
+Cases (pop.)    &                  &                  &                  &                  &    0.483         &                  &                  \\
+                &                  &                  &                  &                  &  (0.672)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -47.15         &                  \\
+                &                  &                  &                  &                  &                  &  (58.00)         &                  \\
+Constant        &    100.4\sym{***}&    118.2\sym{***}&    99.35\sym{***}&   -14.11         &    100.4\sym{***}&    100.4\sym{***}&    120.1\sym{***}\\
+                &  (8.604)         &  (10.70)         &  (3.430)         &  (11.44)         &  (8.640)         &  (8.599)         &  (16.17)         \\
+\hline
+\(R^{2}\)       &    0.151         &    0.076         &    0.208         &    0.234         &    0.151         &    0.152         &    0.029         \\
+Observations    &     2130         &     2130         &     2130         &     2130         &     2130         &     2130         &     3030         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = child\_support\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &    10.52\sym{*}  &    10.55\sym{*}  &    10.55\sym{*}  &    11.07\sym{*}  &    10.45\sym{*}  &    5.641         &    9.673         \\
+                &  (4.282)         &  (4.368)         &  (4.313)         &  (4.473)         &  (3.908)         &  (5.241)         &  (4.791)         \\
+-1              &   -5.629         &   -4.867         &   -5.599         &   -4.537         &   -4.978         &   -7.933         &   -6.405         \\
+                &  (3.571)         &  (3.464)         &  (3.598)         &  (3.855)         &  (3.404)         &  (4.228)         &  (3.846)         \\
+0               &   -13.50\sym{***}&   -16.10\sym{**} &   -13.47\sym{***}&   -11.87\sym{***}&   -9.672\sym{*}  &   -17.67\sym{***}&   -15.08\sym{***}\\
+                &  (2.842)         &  (4.537)         &  (2.843)         &  (2.587)         &  (3.872)         &  (3.187)         &  (3.042)         \\
+1               &   -23.12\sym{***}&   -25.40\sym{***}&   -23.09\sym{***}&   -20.96\sym{***}&   -19.82\sym{***}&   -28.90\sym{***}&   -24.43\sym{***}\\
+                &  (3.033)         &  (2.513)         &  (3.029)         &  (2.532)         &  (2.926)         &  (3.655)         &  (2.997)         \\
+2               &   -22.65\sym{***}&   -19.51\sym{***}&   -22.62\sym{***}&   -19.96\sym{***}&   -19.75\sym{***}&   -28.03\sym{***}&   -25.04\sym{***}\\
+                &  (1.577)         &  (2.786)         &  (1.580)         &  (1.562)         &  (1.130)         &  (3.461)         &  (1.421)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -1.053         &                  &                  \\
+                &                  &                  &                  &                  &  (0.682)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &    135.4\sym{*}  &                  \\
+                &                  &                  &                  &                  &                  &  (59.42)         &                  \\
+Constant        &    74.19\sym{***}&    86.07\sym{***}&    136.7\sym{***}&    253.9\sym{***}&    74.13\sym{***}&    74.14\sym{***}&    62.23\sym{***}\\
+                &  (2.651)         &  (4.704)         &  (6.903)         &  (12.33)         &  (2.655)         &  (2.687)         &  (4.010)         \\
+\hline
+\(R^{2}\)       &    0.438         &    0.260         &    0.669         &    0.719         &    0.439         &    0.441         &    0.626         \\
+Observations    &     2130         &     2130         &     2130         &     2130         &     2130         &     2130         &     3030         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = child\_custody\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &   -11.60\sym{***}&   -7.045         &   -11.56\sym{***}&   -11.46\sym{***}&   -11.65\sym{***}&   -8.352\sym{*}  &   -15.02\sym{***}\\
+                &  (2.452)         &  (5.652)         &  (2.466)         &  (2.635)         &  (2.370)         &  (3.100)         &  (3.118)         \\
+-1              &   -0.544         &    2.731         &   -0.508         &   -0.262         &  -0.0454         &    0.989         &   -2.799         \\
+                &  (4.209)         &  (7.137)         &  (4.225)         &  (4.647)         &  (4.043)         &  (4.335)         &  (4.707)         \\
+0               &   -3.179         &   -6.882         &   -3.143         &   -2.749         &   -0.250         &   -0.400         &   -1.630         \\
+                &  (2.271)         &  (4.546)         &  (2.276)         &  (2.673)         &  (2.898)         &  (2.909)         &  (3.194)         \\
+1               &   -4.489         &   -10.08         &   -4.453         &   -3.911         &   -1.966         &   -0.644         &   -6.270         \\
+                &  (3.710)         &  (6.955)         &  (3.721)         &  (3.882)         &  (4.754)         &  (5.300)         &  (3.749)         \\
+2               &    5.045         &    8.777         &    5.081         &    5.770\sym{*}  &    7.263\sym{*}  &    8.628\sym{*}  &    3.758         \\
+                &  (3.176)         &  (5.258)         &  (3.184)         &  (2.478)         &  (2.645)         &  (3.032)         &  (4.082)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -0.806\sym{*}  &                  &                  \\
+                &                  &                  &                  &                  &  (0.363)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -90.08\sym{*}  &                  \\
+                &                  &                  &                  &                  &                  &  (32.41)         &                  \\
+Constant        &    74.99\sym{***}&    90.78\sym{***}&    110.3\sym{***}&    194.9\sym{***}&    74.95\sym{***}&    75.03\sym{***}&    139.1\sym{***}\\
+                &  (7.722)         &  (6.474)         &  (3.388)         &  (14.68)         &  (7.704)         &  (7.746)         &  (17.09)         \\
+\hline
+\(R^{2}\)       &    0.226         &    0.128         &    0.302         &    0.351         &    0.227         &    0.227         &    0.107         \\
+Observations    &     2130         &     2130         &     2130         &     2130         &     2130         &     2130         &     3030         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = div\_how\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &   -0.265         &   -5.796         &   -0.237         &   -0.117         &   -0.258         &    1.210         &   -1.103         \\
+                &  (6.828)         &  (7.024)         &  (6.848)         &  (6.649)         &  (6.790)         &  (6.683)         &  (6.438)         \\
+-1              &    5.764\sym{*}  &    4.060         &    5.793\sym{*}  &    6.087\sym{*}  &    5.695\sym{*}  &    6.461\sym{*}  &    2.284         \\
+                &  (2.341)         &  (3.505)         &  (2.347)         &  (2.709)         &  (2.340)         &  (2.468)         &  (4.141)         \\
+0               &    5.781         &    5.018         &    5.809         &    6.278\sym{*}  &    5.373         &    7.044         &    1.074         \\
+                &  (3.231)         &  (5.642)         &  (3.240)         &  (2.528)         &  (3.167)         &  (3.658)         &  (4.756)         \\
+1               &    6.558         &    4.224         &    6.587         &    7.230         &    6.207         &    8.306         &    5.323         \\
+                &  (5.539)         &  (5.916)         &  (5.556)         &  (4.807)         &  (5.349)         &  (5.586)         &  (6.056)         \\
+2               &    2.413         &   -3.147         &    2.442         &    3.256         &    2.104         &    4.042         &    2.344         \\
+                &  (3.641)         &  (4.735)         &  (3.649)         &  (3.768)         &  (3.627)         &  (3.515)         &  (3.803)         \\
+Cases (pop.)    &                  &                  &                  &                  &    0.112         &                  &                  \\
+                &                  &                  &                  &                  &  (0.343)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -40.95         &                  \\
+                &                  &                  &                  &                  &                  &  (22.94)         &                  \\
+Constant        &    88.13\sym{***}&    110.7\sym{***}&    108.4\sym{***}&    181.3\sym{***}&    88.13\sym{***}&    88.14\sym{***}&    69.40\sym{***}\\
+                &  (9.507)         &  (9.250)         &  (5.047)         &  (13.56)         &  (9.506)         &  (9.523)         &  (12.35)         \\
+\hline
+\(R^{2}\)       &    0.216         &    0.074         &    0.280         &    0.323         &    0.216         &    0.216         &    0.257         \\
+Observations    &     2130         &     2130         &     2130         &     2130         &     2130         &     2130         &     3030         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = div\_much\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &    0.408         &    13.78         &    0.414         &    1.773         &    0.379         &    2.316         &    9.422         \\
+                &  (10.71)         &  (31.10)         &  (10.75)         &  (10.63)         &  (10.87)         &  (10.26)         &  (7.198)         \\
+-1              &    29.90         &   -8.495         &    29.90         &    32.57         &    30.50         &    30.78         &    27.47         \\
+                &  (26.15)         &  (19.27)         &  (26.24)         &  (26.29)         &  (26.67)         &  (25.96)         &  (29.28)         \\
+0               &   -5.581         &   -36.37         &   -5.574         &   -1.603         &   -2.117         &   -3.970         &   -2.924         \\
+                &  (14.38)         &  (19.22)         &  (14.43)         &  (14.81)         &  (15.88)         &  (14.12)         &  (14.65)         \\
+1               &    14.40         &    0.968         &    14.41         &    19.69         &    17.28         &    16.60         &    20.18         \\
+                &  (12.88)         &  (23.43)         &  (12.93)         &  (11.25)         &  (11.58)         &  (11.74)         &  (11.03)         \\
+2               &    12.60         &    5.326         &    12.61         &    19.18         &    14.75         &    14.45         &    8.698         \\
+                &  (14.88)         &  (17.67)         &  (14.93)         &  (15.74)         &  (16.18)         &  (14.91)         &  (16.19)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -0.936         &                  &                  \\
+                &                  &                  &                  &                  &  (1.179)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -50.88         &                  \\
+                &                  &                  &                  &                  &                  &  (94.22)         &                  \\
+Constant        &    73.67\sym{***}&    74.49\sym{***}&    95.01\sym{***}&    127.6\sym{***}&    73.74\sym{***}&    73.80\sym{***}&    24.56         \\
+                &  (7.540)         &  (7.950)         &  (7.592)         &  (17.78)         &  (7.522)         &  (7.674)         &  (12.57)         \\
+\hline
+\(R^{2}\)       &    0.071         &    0.047         &    0.118         &    0.127         &    0.071         &    0.071         &    0.231         \\
+Observations    &     1562         &     1562         &     1562         &     1562         &     1562         &     1562         &     2222         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Main Pandemic cohort 2 - Var = div\_long\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{Main (pop.)}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+-2              &    3.858         &    36.97         &    3.858         &    3.577         &    3.900         &    3.140         &    4.618         \\
+                &  (16.01)         &  (45.21)         &  (16.06)         &  (15.95)         &  (16.24)         &  (15.13)         &  (14.19)         \\
+-1              &    9.736         &    8.016         &    9.736         &    9.174         &    8.901         &    9.406         &    5.923         \\
+                &  (14.30)         &  (15.66)         &  (14.35)         &  (14.53)         &  (13.72)         &  (13.87)         &  (19.80)         \\
+0               &    0.568         &   -21.02         &    0.568         &   -0.276         &   -4.237         &  -0.0281         &    0.840         \\
+                &  (13.22)         &  (13.75)         &  (13.27)         &  (14.11)         &  (13.29)         &  (12.48)         &  (13.70)         \\
+1               &    6.406         &    16.00         &    6.406         &    5.281         &    2.398         &    5.597         &    6.116         \\
+                &  (8.877)         &  (18.98)         &  (8.906)         &  (9.734)         &  (9.503)         &  (8.621)         &  (9.399)         \\
+2               &    12.38         &    14.80         &    12.38         &    10.98         &    9.373         &    11.71         &    7.802         \\
+                &  (7.173)         &  (12.55)         &  (7.196)         &  (7.052)         &  (9.593)         &  (8.203)         &  (10.57)         \\
+Cases (pop.)    &                  &                  &                  &                  &    1.301         &                  &                  \\
+                &                  &                  &                  &                  &  (1.293)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &    18.78         &                  \\
+                &                  &                  &                  &                  &                  &  (87.62)         &                  \\
+Constant        &    81.82\sym{**} &    86.08\sym{**} &    95.65\sym{***}&    84.45\sym{***}&    81.72\sym{**} &    81.77\sym{**} &    78.28\sym{***}\\
+                &  (17.38)         &  (21.58)         &  (8.071)         &  (14.72)         &  (17.43)         &  (17.52)         &  (16.07)         \\
+\hline
+\(R^{2}\)       &    0.060         &    0.032         &    0.120         &    0.153         &    0.061         &    0.061         &    0.055         \\
+Observations    &     1420         &     1420         &     1420         &     1420         &     1420         &     1420         &     2020         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+\end{document}
+
