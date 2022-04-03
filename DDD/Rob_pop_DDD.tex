@@ -1,0 +1,423 @@
+%  9 Dec 2020 10:12:56
+\documentclass{article}
+\usepackage{longtable}
+\begin{document}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = div\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   -10.19\sym{***}&   -10.79\sym{***}&   -11.50\sym{***}&   -11.72\sym{***}&   -10.20\sym{***}&   -10.05\sym{***}&   -9.839\sym{***}\\
+                &  (0.976)         &  (1.195)         &  (0.985)         &  (1.336)         &  (0.997)         &  (0.910)         &  (0.937)         \\
+Pandemic Threshold&    2.941\sym{**} &    2.083\sym{*}  &    4.663\sym{***}&    6.068\sym{***}&    2.016         &    3.040\sym{**} &    1.971\sym{*}  \\
+                &  (0.950)         &  (0.780)         &  (0.943)         &  (1.379)         &  (1.950)         &  (0.970)         &  (0.909)         \\
+Cases (pop.)    &                  &                  &                  &                  &    0.190         &                  &                  \\
+                &                  &                  &                  &                  &  (0.241)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -0.872         &                  \\
+                &                  &                  &                  &                  &                  &  (2.486)         &                  \\
+Constant        &    102.5\sym{***}&    104.7\sym{***}&    105.8\sym{***}&    157.5\sym{***}&    102.5\sym{***}&    102.5\sym{***}&    100.7\sym{***}\\
+                &  (2.926)         &  (1.326)         &  (1.312)         &  (2.928)         &  (2.923)         &  (2.928)         &  (1.534)         \\
+\hline
+\(R^{2}\)       &    0.558         &    0.492         &    0.608         &    0.647         &    0.558         &    0.558         &    0.395         \\
+Observations    &     7242         &     7242         &     7242         &     7242         &     7242         &     7242         &    10302         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = div\_cov\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   3997.6\sym{***}&   4142.2\sym{***}&   4029.7\sym{***}&   4057.4\sym{***}&   3998.4\sym{***}&   4220.9\sym{***}&   4014.9\sym{***}\\
+                &  (247.0)         &  (324.1)         &  (248.0)         &  (249.8)         &  (246.8)         &  (274.3)         &  (246.2)         \\
+Pandemic Threshold&   -323.5         &   -311.2\sym{*}  &   -349.2\sym{*}  &   -367.3\sym{*}  &   -279.1         &   -160.5         &   -322.8         \\
+                &  (162.8)         &  (145.9)         &  (165.2)         &  (174.0)         &  (285.8)         &  (162.9)         &  (162.7)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -9.215         &                  &                  \\
+                &                  &                  &                  &                  &  (32.15)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &  -1425.5\sym{*}  &                  \\
+                &                  &                  &                  &                  &                  &  (591.0)         &                  \\
+Constant        &    79.51\sym{***}&    108.7\sym{***}&    66.30\sym{***}&    208.4\sym{**} &    79.37\sym{***}&    77.85\sym{***}&    55.35\sym{***}\\
+                &  (15.16)         &  (25.51)         &  (16.17)         &  (72.36)         &  (15.00)         &  (15.86)         &  (10.65)         \\
+\hline
+\(R^{2}\)       &    0.693         &    0.599         &    0.695         &    0.697         &    0.693         &    0.695         &    0.692         \\
+Observations    &     6532         &     6532         &     6532         &     6532         &     6532         &     6532         &     9292         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = div\_file\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   -16.97\sym{***}&   -17.64\sym{*}  &   -20.12\sym{***}&   -18.30\sym{***}&   -17.04\sym{***}&   -18.94\sym{***}&   -14.92\sym{***}\\
+                &  (3.475)         &  (7.027)         &  (3.362)         &  (3.333)         &  (3.437)         &  (3.703)         &  (4.145)         \\
+Pandemic Threshold&   -0.498         &    0.712         &    2.078         &    0.379         &   -4.824         &   -1.941         &    0.170         \\
+                &  (3.521)         &  (4.200)         &  (2.933)         &  (3.631)         &  (6.719)         &  (3.840)         &  (4.059)         \\
+Cases (pop.)    &                  &                  &                  &                  &    0.898         &                  &                  \\
+                &                  &                  &                  &                  &  (0.869)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &    12.62         &                  \\
+                &                  &                  &                  &                  &                  &  (10.63)         &                  \\
+Constant        &    88.91\sym{***}&    100.9\sym{***}&    136.8\sym{***}&    130.8\sym{***}&    88.93\sym{***}&    88.93\sym{***}&    83.47\sym{***}\\
+                &  (5.606)         &  (4.937)         &  (2.722)         &  (8.551)         &  (5.601)         &  (5.616)         &  (6.696)         \\
+\hline
+\(R^{2}\)       &    0.056         &    0.044         &    0.112         &    0.132         &    0.056         &    0.056         &    0.033         \\
+Observations    &     6532         &     6532         &     6532         &     6532         &     6532         &     6532         &     9292         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = div\_papers\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   -24.60\sym{***}&   -21.75\sym{***}&   -29.65\sym{***}&   -27.15\sym{***}&   -24.60\sym{***}&   -23.27\sym{***}&   -22.95\sym{***}\\
+                &  (2.631)         &  (4.815)         &  (2.939)         &  (2.703)         &  (2.630)         &  (3.030)         &  (3.187)         \\
+Pandemic Threshold&   -6.649         &   0.0463         &   -2.631         &   -5.265         &   -6.258         &   -5.677         &   -7.806         \\
+                &  (3.446)         &  (5.627)         &  (2.284)         &  (3.051)         &  (5.124)         &  (3.717)         &  (4.200)         \\
+Cases (pop.)    &                  &                  &                  &                  &  -0.0807         &                  &                  \\
+                &                  &                  &                  &                  &  (0.501)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -8.492         &                  \\
+                &                  &                  &                  &                  &                  &  (6.438)         &                  \\
+Constant        &    116.5\sym{***}&    126.1\sym{***}&    126.3\sym{***}&    118.7\sym{***}&    116.5\sym{***}&    116.5\sym{***}&    115.6\sym{***}\\
+                &  (6.772)         &  (5.372)         &  (2.878)         &  (8.598)         &  (6.771)         &  (6.768)         &  (8.699)         \\
+\hline
+\(R^{2}\)       &    0.138         &    0.094         &    0.217         &    0.245         &    0.138         &    0.138         &    0.027         \\
+Observations    &     6532         &     6532         &     6532         &     6532         &     6532         &     6532         &     9292         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = div\_legal\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   -19.46\sym{***}&   -14.86\sym{***}&   -21.03\sym{***}&   -19.94\sym{***}&   -19.44\sym{***}&   -19.05\sym{***}&   -17.97\sym{***}\\
+                &  (1.597)         &  (2.291)         &  (1.809)         &  (1.849)         &  (1.580)         &  (1.711)         &  (1.713)         \\
+Pandemic Threshold&    3.037\sym{*}  &    4.758\sym{***}&    3.910\sym{*}  &    2.861         &    4.533         &    3.337         &    2.862         \\
+                &  (1.490)         &  (1.325)         &  (1.482)         &  (1.540)         &  (2.541)         &  (1.951)         &  (1.667)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -0.308         &                  &                  \\
+                &                  &                  &                  &                  &  (0.346)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -2.635         &                  \\
+                &                  &                  &                  &                  &                  &  (6.985)         &                  \\
+Constant        &    87.90\sym{***}&    95.91\sym{***}&    106.6\sym{***}&    24.74\sym{***}&    87.89\sym{***}&    87.89\sym{***}&    125.0\sym{***}\\
+                &  (2.692)         &  (2.827)         &  (1.263)         &  (4.542)         &  (2.691)         &  (2.689)         &  (3.571)         \\
+\hline
+\(R^{2}\)       &    0.188         &    0.162         &    0.263         &    0.294         &    0.188         &    0.188         &    0.123         \\
+Observations    &     7242         &     7242         &     7242         &     7242         &     7242         &     7242         &    10302         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = div\_lawyer\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   -26.05\sym{***}&   -20.31\sym{***}&   -28.82\sym{***}&   -27.62\sym{***}&   -26.02\sym{***}&   -27.00\sym{***}&   -24.44\sym{***}\\
+                &  (2.224)         &  (3.640)         &  (2.297)         &  (2.442)         &  (2.234)         &  (2.822)         &  (2.708)         \\
+Pandemic Threshold&    4.196\sym{*}  &    5.837\sym{*}  &    4.466\sym{*}  &    3.805\sym{*}  &    6.654\sym{*}  &    3.504         &    5.133\sym{*}  \\
+                &  (2.049)         &  (2.716)         &  (1.786)         &  (1.751)         &  (3.247)         &  (2.627)         &  (2.364)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -0.506         &                  &                  \\
+                &                  &                  &                  &                  &  (0.449)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &    6.055         &                  \\
+                &                  &                  &                  &                  &                  &  (8.361)         &                  \\
+Constant        &    101.9\sym{***}&    111.0\sym{***}&    129.8\sym{***}&    131.1\sym{***}&    102.0\sym{***}&    101.9\sym{***}&    111.4\sym{***}\\
+                &  (3.129)         &  (4.421)         &  (1.970)         &  (5.345)         &  (3.126)         &  (3.133)         &  (5.101)         \\
+\hline
+\(R^{2}\)       &    0.117         &    0.071         &    0.188         &    0.214         &    0.117         &    0.117         &    0.032         \\
+Observations    &     7100         &     7100         &     7100         &     7100         &     7100         &     7100         &    10100         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = div\_court\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   -16.54\sym{***}&   -10.83\sym{**} &   -19.18\sym{***}&   -17.56\sym{***}&   -16.49\sym{***}&   -13.89\sym{***}&   -16.03\sym{***}\\
+                &  (2.479)         &  (3.489)         &  (2.562)         &  (2.456)         &  (2.449)         &  (2.455)         &  (2.782)         \\
+Pandemic Threshold&    2.404         &    4.738         &    4.180\sym{*}  &    3.346         &    5.902\sym{*}  &    4.337\sym{*}  &    0.895         \\
+                &  (1.788)         &  (2.448)         &  (1.809)         &  (1.726)         &  (2.802)         &  (2.110)         &  (2.096)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -0.721         &                  &                  \\
+                &                  &                  &                  &                  &  (0.370)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -16.95\sym{*}  &                  \\
+                &                  &                  &                  &                  &                  &  (6.601)         &                  \\
+Constant        &    95.24\sym{***}&    104.7\sym{***}&    104.9\sym{***}&    356.5\sym{***}&    95.22\sym{***}&    95.18\sym{***}&    120.7\sym{***}\\
+                &  (3.988)         &  (4.237)         &  (1.938)         &  (5.115)         &  (3.988)         &  (3.986)         &  (6.363)         \\
+\hline
+\(R^{2}\)       &    0.144         &    0.122         &    0.210         &    0.239         &    0.144         &    0.144         &    0.043         \\
+Observations    &     7100         &     7100         &     7100         &     7100         &     7100         &     7100         &    10100         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = div\_law\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   -11.58\sym{***}&   -10.15\sym{***}&   -13.18\sym{***}&   -10.90\sym{***}&   -11.57\sym{***}&   -10.21\sym{***}&   -9.013\sym{***}\\
+                &  (1.160)         &  (1.613)         &  (1.514)         &  (1.278)         &  (1.152)         &  (1.121)         &  (1.506)         \\
+Pandemic Threshold&   -1.145         &   -1.894         &    0.627         &   -2.673         &   -0.701         &   -0.145         &   -3.299\sym{*}  \\
+                &  (1.249)         &  (1.080)         &  (1.193)         &  (1.366)         &  (2.248)         &  (1.428)         &  (1.509)         \\
+Cases (pop.)    &                  &                  &                  &                  &  -0.0914         &                  &                  \\
+                &                  &                  &                  &                  &  (0.292)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -8.756\sym{**} &                  \\
+                &                  &                  &                  &                  &                  &  (3.252)         &                  \\
+Constant        &    122.0\sym{***}&    127.0\sym{***}&    115.2\sym{***}&    102.1\sym{***}&    122.0\sym{***}&    122.0\sym{***}&    198.3\sym{***}\\
+                &  (3.757)         &  (2.560)         &  (1.786)         &  (5.830)         &  (3.760)         &  (3.754)         &  (6.702)         \\
+\hline
+\(R^{2}\)       &    0.652         &    0.535         &    0.677         &    0.692         &    0.652         &    0.652         &    0.519         \\
+Observations    &     6958         &     6958         &     6958         &     6958         &     6958         &     6958         &     9898         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = lock\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   1257.6\sym{***}&   1099.2\sym{***}&   1262.1\sym{***}&   1254.8\sym{***}&   1260.6\sym{***}&   1367.7\sym{***}&   1258.4\sym{***}\\
+                &  (132.7)         &  (74.20)         &  (132.5)         &  (128.8)         &  (133.9)         &  (168.2)         &  (133.3)         \\
+Pandemic Threshold&   -383.4\sym{***}&   -397.8\sym{***}&   -390.8\sym{***}&   -375.4\sym{***}&   -175.4         &   -303.1\sym{**} &   -388.9\sym{***}\\
+                &  (92.38)         &  (42.37)         &  (94.73)         &  (99.89)         &  (149.4)         &  (97.01)         &  (93.03)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -42.83\sym{**} &                  &                  \\
+                &                  &                  &                  &                  &  (15.18)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -704.4\sym{*}  &                  \\
+                &                  &                  &                  &                  &                  &  (334.3)         &                  \\
+Constant        &    19.51\sym{**} &    40.34\sym{***}&    50.59\sym{***}&    547.2\sym{***}&    18.40\sym{**} &    17.19\sym{*}  &    45.22\sym{***}\\
+                &  (6.581)         &  (6.316)         &  (5.601)         &  (23.60)         &  (6.778)         &  (6.785)         &  (6.288)         \\
+\hline
+\(R^{2}\)       &    0.456         &    0.434         &    0.457         &    0.460         &    0.459         &    0.458         &    0.446         \\
+Observations    &     7242         &     7242         &     7242         &     7242         &     7242         &     7242         &    10302         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = div\_cov\_media\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   -11.72\sym{***}&   -10.92\sym{***}&   -13.13\sym{***}&   -13.39\sym{***}&   -11.73\sym{***}&   -10.82\sym{***}&   -11.08\sym{***}\\
+                &  (1.074)         &  (1.476)         &  (1.207)         &  (1.362)         &  (1.090)         &  (0.809)         &  (0.962)         \\
+Pandemic Threshold&    4.553\sym{***}&    3.771\sym{***}&    6.277\sym{***}&    7.609\sym{***}&    3.923         &    5.206\sym{***}&    3.279\sym{**} \\
+                &  (1.140)         &  (1.025)         &  (0.991)         &  (1.572)         &  (2.422)         &  (1.149)         &  (0.989)         \\
+Cases (pop.)    &                  &                  &                  &                  &    0.130         &                  &                  \\
+                &                  &                  &                  &                  &  (0.320)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -5.726         &                  \\
+                &                  &                  &                  &                  &                  &  (3.304)         &                  \\
+Constant        &    101.5\sym{***}&    103.0\sym{***}&    115.7\sym{***}&    189.4\sym{***}&    101.5\sym{***}&    101.5\sym{***}&    101.0\sym{***}\\
+                &  (2.773)         &  (1.587)         &  (1.174)         &  (2.861)         &  (2.768)         &  (2.771)         &  (2.135)         \\
+\hline
+\(R^{2}\)       &    0.534         &    0.414         &    0.579         &    0.612         &    0.534         &    0.534         &    0.348         \\
+Observations    &     7242         &     7242         &     7242         &     7242         &     7242         &     7242         &    10302         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = alimony\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   -21.65\sym{***}&   -18.19\sym{***}&   -26.47\sym{***}&   -25.03\sym{***}&   -21.66\sym{***}&   -22.18\sym{***}&   -20.39\sym{***}\\
+                &  (2.825)         &  (3.467)         &  (2.567)         &  (3.029)         &  (2.821)         &  (2.721)         &  (3.490)         \\
+Pandemic Threshold&   -1.200         &    2.903         &    0.784         &    0.721         &   -1.918         &   -1.590         &   -2.539         \\
+                &  (2.260)         &  (3.442)         &  (1.997)         &  (2.573)         &  (3.417)         &  (2.809)         &  (2.488)         \\
+Cases (pop.)    &                  &                  &                  &                  &    0.148         &                  &                  \\
+                &                  &                  &                  &                  &  (0.424)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &    3.418         &                  \\
+                &                  &                  &                  &                  &                  &  (10.85)         &                  \\
+Constant        &    109.7\sym{***}&    119.5\sym{***}&    97.02\sym{***}&    26.67\sym{***}&    109.7\sym{***}&    109.7\sym{***}&    117.2\sym{***}\\
+                &  (4.325)         &  (4.578)         &  (2.229)         &  (6.043)         &  (4.323)         &  (4.315)         &  (5.514)         \\
+\hline
+\(R^{2}\)       &    0.120         &    0.062         &    0.180         &    0.208         &    0.120         &    0.120         &    0.028         \\
+Observations    &     7242         &     7242         &     7242         &     7242         &     7242         &     7242         &    10302         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = child\_support\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &    31.84\sym{***}&    28.92\sym{***}&    34.12\sym{***}&    34.63\sym{***}&    31.88\sym{***}&    35.05\sym{***}&    32.88\sym{***}\\
+                &  (4.496)         &  (4.481)         &  (3.950)         &  (3.400)         &  (4.493)         &  (5.153)         &  (4.621)         \\
+Pandemic Threshold&   -12.40\sym{***}&   -14.45\sym{***}&   -14.53\sym{***}&   -11.45\sym{***}&   -9.288\sym{*}  &   -10.05\sym{***}&   -12.61\sym{***}\\
+                &  (2.750)         &  (2.794)         &  (3.028)         &  (2.570)         &  (4.057)         &  (2.838)         &  (2.740)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -0.640         &                  &                  \\
+                &                  &                  &                  &                  &  (0.525)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -20.57         &                  \\
+                &                  &                  &                  &                  &                  &  (13.39)         &                  \\
+Constant        &    79.18\sym{***}&    87.02\sym{***}&    141.3\sym{***}&    114.1\sym{***}&    79.16\sym{***}&    79.11\sym{***}&    59.02\sym{***}\\
+                &  (3.279)         &  (2.579)         &  (2.090)         &  (4.227)         &  (3.290)         &  (3.294)         &  (2.509)         \\
+\hline
+\(R^{2}\)       &    0.313         &    0.184         &    0.597         &    0.661         &    0.313         &    0.313         &    0.544         \\
+Observations    &     7242         &     7242         &     7242         &     7242         &     7242         &     7242         &    10302         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = child\_custody\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   -16.02\sym{***}&   -14.23\sym{***}&   -18.32\sym{***}&   -17.09\sym{***}&   -15.95\sym{***}&   -14.55\sym{***}&   -14.50\sym{***}\\
+                &  (1.610)         &  (2.555)         &  (1.719)         &  (1.686)         &  (1.608)         &  (2.034)         &  (2.252)         \\
+Pandemic Threshold&   -1.016         &    1.150         &    1.112         &   0.0971         &    3.872         &   0.0576         &   -1.366         \\
+                &  (1.716)         &  (1.885)         &  (1.658)         &  (2.042)         &  (2.503)         &  (2.046)         &  (2.202)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -1.006\sym{***}&                  &                  \\
+                &                  &                  &                  &                  &  (0.281)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -9.408         &                  \\
+                &                  &                  &                  &                  &                  &  (7.060)         &                  \\
+Constant        &    87.64\sym{***}&    97.41\sym{***}&    95.08\sym{***}&    136.1\sym{***}&    87.62\sym{***}&    87.61\sym{***}&    144.0\sym{***}\\
+                &  (4.158)         &  (3.266)         &  (1.861)         &  (6.441)         &  (4.159)         &  (4.153)         &  (6.496)         \\
+\hline
+\(R^{2}\)       &    0.186         &    0.137         &    0.257         &    0.288         &    0.186         &    0.186         &    0.121         \\
+Observations    &     7242         &     7242         &     7242         &     7242         &     7242         &     7242         &    10302         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = div\_how\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   -14.91\sym{***}&   -11.68\sym{***}&   -17.12\sym{***}&   -17.28\sym{***}&   -14.86\sym{***}&   -13.37\sym{***}&   -14.02\sym{***}\\
+                &  (1.712)         &  (3.075)         &  (1.837)         &  (1.870)         &  (1.716)         &  (1.963)         &  (1.901)         \\
+Pandemic Threshold&   -0.795         &   -0.360         &    0.667         &    2.934         &    2.734         &    0.332         &   -1.638         \\
+                &  (1.163)         &  (1.835)         &  (1.560)         &  (1.722)         &  (2.060)         &  (1.305)         &  (1.405)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -0.727         &                  &                  \\
+                &                  &                  &                  &                  &  (0.387)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -9.877         &                  \\
+                &                  &                  &                  &                  &                  &  (6.599)         &                  \\
+Constant        &    90.27\sym{***}&    102.0\sym{***}&    92.34\sym{***}&    326.4\sym{***}&    90.25\sym{***}&    90.23\sym{***}&    74.26\sym{***}\\
+                &  (3.309)         &  (3.970)         &  (1.770)         &  (6.748)         &  (3.308)         &  (3.309)         &  (4.674)         \\
+\hline
+\(R^{2}\)       &    0.188         &    0.070         &    0.236         &    0.268         &    0.188         &    0.188         &    0.260         \\
+Observations    &     7242         &     7242         &     7242         &     7242         &     7242         &     7242         &    10302         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = div\_much\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   -6.144         &   -2.545         &   -9.204         &   -9.950\sym{*}  &   -6.050         &   -3.968         &   -3.319         \\
+                &  (5.254)         &  (6.821)         &  (4.738)         &  (4.893)         &  (5.362)         &  (4.778)         &  (6.058)         \\
+Pandemic Threshold&   -4.379         &   -7.416         &   -1.481         &   -0.409         &    0.900         &   -2.815         &   -7.206         \\
+                &  (3.620)         &  (4.499)         &  (3.019)         &  (3.043)         &  (8.801)         &  (4.325)         &  (3.825)         \\
+Cases (pop.)    &                  &                  &                  &                  &   -1.096         &                  &                  \\
+                &                  &                  &                  &                  &  (1.317)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -13.67         &                  \\
+                &                  &                  &                  &                  &                  &  (20.97)         &                  \\
+Constant        &    91.48\sym{***}&    94.41\sym{***}&    107.0\sym{***}&    128.4\sym{***}&    91.59\sym{***}&    91.45\sym{***}&    29.39\sym{***}\\
+                &  (6.284)         &  (5.923)         &  (4.096)         &  (9.296)         &  (6.328)         &  (6.261)         &  (6.267)         \\
+\hline
+\(R^{2}\)       &    0.049         &    0.036         &    0.088         &    0.097         &    0.049         &    0.049         &    0.179         \\
+Observations    &     5538         &     5538         &     5538         &     5538         &     5538         &     5538         &     7878         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+{
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\begin{longtable}{l*{7}{c}}
+\caption{Robustness (pop.) - Var = div\_long\_ref}\\
+\hline\hline\endfirsthead\hline\endhead\hline\endfoot\endlastfoot
+                &\multicolumn{1}{c}{DDD}&\multicolumn{1}{c}{No Weight}&\multicolumn{1}{c}{Linear}&\multicolumn{1}{c}{Quadratic}&\multicolumn{1}{c}{Cases Control}&\multicolumn{1}{c}{Deaths Control}&\multicolumn{1}{c}{Rob 2004}\\
+\hline
+Lockdown        &   -19.92\sym{**} &   -8.335         &   -23.64\sym{**} &   -22.08\sym{**} &   -19.98\sym{**} &   -15.43\sym{*}  &   -20.56\sym{**} \\
+                &  (5.810)         &  (11.47)         &  (7.027)         &  (6.361)         &  (5.802)         &  (6.829)         &  (6.703)         \\
+Pandemic Threshold&   -3.394         &   -4.581         &   -0.934         &   -2.087         &   -6.484         &   -0.180         &   -6.528         \\
+                &  (3.395)         &  (4.147)         &  (3.537)         &  (3.590)         &  (4.767)         &  (4.236)         &  (3.588)         \\
+Cases (pop.)    &                  &                  &                  &                  &    0.642         &                  &                  \\
+                &                  &                  &                  &                  &  (0.672)         &                  &                  \\
+Deaths (pop.)   &                  &                  &                  &                  &                  &   -28.11\sym{*}  &                  \\
+                &                  &                  &                  &                  &                  &  (10.50)         &                  \\
+Constant        &    123.5\sym{***}&    131.5\sym{***}&    140.1\sym{***}&    157.1\sym{***}&    123.5\sym{***}&    123.5\sym{***}&    69.05\sym{***}\\
+                &  (8.067)         &  (9.141)         &  (4.207)         &  (11.15)         &  (8.066)         &  (8.056)         &  (8.947)         \\
+\hline
+\(R^{2}\)       &    0.029         &    0.030         &    0.080         &    0.106         &    0.029         &    0.029         &    0.044         \\
+Observations    &     5538         &     5538         &     5538         &     5538         &     5538         &     5538         &     7878         \\
+\hline\hline
+\multicolumn{8}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{8}{l}{\footnotesize \sym{*} \(p<0.05\), \sym{**} \(p<0.01\), \sym{***} \(p<0.001\)}\\
+\end{longtable}
+}
+
+\end{document}
+
